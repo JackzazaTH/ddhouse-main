@@ -1,4 +1,4 @@
-const { db } = require('@vercel/postgres');
+const { db } = require('postgres://53a2035e8dbd7185af2e9ee6ffb28fc3eeaab91556e725d8183d344f96a1c000:sk_mv9cqhEoO6_TQco_XjRCF@db.prisma.io:5432/postgres?sslmode=require');
 const { INITIAL_HOMES } = require('../lib/constants.js');
 
 async function seedHomes(client) {
