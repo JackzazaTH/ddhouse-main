@@ -1,1 +1,0 @@
-// This file is part of a legacy setup and is not used. The active types are in /lib/types.ts.
