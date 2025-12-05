@@ -434,17 +434,17 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
     switch(activeTab) {
       case 'homes': return renderHomeTable();
       case 'portfolio': return renderSimpleTable(portfolioProjects, [
-          { header: 'Image', render: (p) => <img src={p.coverImage} className="h-12 w-16 object-cover rounded-lg shadow-sm"/> },
+          { header: 'Image', render: (p) => <img src={p.coverImage} alt={p.title} className="h-12 w-16 object-cover rounded-lg shadow-sm"/> },
           { header: 'Project Title', render: (p) => <span className="font-bold text-gray-900">{p.title}</span> },
           { header: 'Category', render: (p) => <span className="text-sm text-gray-600">{p.category}</span> },
       ], (p) => setFormState({ type: 'portfolio', data: p }), onDeletePortfolioProject);
       
       case 'banners': return renderSimpleTable(banners, [
-          { header: 'Preview', render: (b) => <img src={b.imageUrl} className="h-16 w-32 object-cover rounded-lg border"/> },
+          { header: 'Preview', render: (b) => <img src={b.imageUrl} alt="Banner preview" className="h-16 w-32 object-cover rounded-lg border"/> },
       ], (b) => setFormState({ type: 'banner', data: b }), onDeleteBanner);
 
       case 'articles': return renderSimpleTable(articles, [
-          { header: 'Image', render: (a) => <img src={a.imageUrl} className="h-12 w-12 object-cover rounded-lg"/> },
+          { header: 'Image', render: (a) => <img src={a.imageUrl} alt={a.title} className="h-12 w-12 object-cover rounded-lg"/> },
           { header: 'Title', render: (a) => <div><div className="font-bold text-sm">{a.title}</div><div className="text-xs text-gray-500">{a.author}</div></div> },
           { header: 'Date', render: (a) => <span className="text-sm text-gray-500">{a.publishedDate}</span> },
       ], (a) => setFormState({ type: 'article', data: a }), onDeleteArticle);
@@ -453,14 +453,14 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
       
       case 'promos': return renderSimpleTable(promoCards.sort((a,b) => a.order - b.order), [
           { header: 'Order', render: (c) => <span className="font-mono text-gray-500">{c.order}</span> },
-          { header: 'Image', render: (c) => <img src={c.imageUrl} className="h-12 w-20 object-cover rounded-lg"/> },
+          { header: 'Image', render: (c) => <img src={c.imageUrl} alt={c.title} className="h-12 w-20 object-cover rounded-lg"/> },
           { header: 'Title', render: (c) => <span className="font-medium">{c.title}</span> },
           { header: 'Link', render: (c) => <span className="text-xs text-gray-400 font-mono">{c.linkType}: {c.linkValue}</span> },
       ], (c) => setFormState({ type: 'promo', data: c }), onDeletePromoCard);
 
       case 'testimonials': return renderSimpleTable(testimonials.sort((a,b) => a.order - b.order), [
           { header: 'Order', render: (t) => <span className="font-mono text-gray-500">{t.order}</span> },
-          { header: 'Thumbnail', render: (t) => <img src={t.imageUrl} className="h-12 w-20 object-cover rounded-lg"/> },
+          { header: 'Thumbnail', render: (t) => <img src={t.imageUrl} alt={t.title} className="h-12 w-20 object-cover rounded-lg"/> },
           { header: 'Title', render: (t) => <span className="text-sm font-medium">{t.title}</span> },
           { header: 'Featured', render: (t) => t.isFeatured ? <span className="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded-full">Yes</span> : '-' },
       ], (t) => setFormState({ type: 'testimonial', data: t }), onDeleteTestimonial);
@@ -506,7 +506,7 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
       ], (e) => setFormState({ type: 'calendar', data: e }), onDeleteCalendarEvent);
 
       case 'gallery': return renderSimpleTable(galleryAlbums, [
-          { header: 'Cover', render: (a) => <img src={a.coverImage} className="h-12 w-16 object-cover rounded-lg"/> },
+          { header: 'Cover', render: (a) => <img src={a.coverImage} alt={a.title} className="h-12 w-16 object-cover rounded-lg"/> },
           { header: 'Album', render: (a) => <div><div className="font-bold text-sm">{a.title}</div><div className="text-xs text-gray-500">{a.images.length} items</div></div> },
           { header: 'Date', render: (a) => <span className="text-xs text-gray-500">{a.date}</span> },
       ], (a) => setFormState({ type: 'gallery', data: a }), onDeleteGalleryAlbum);
