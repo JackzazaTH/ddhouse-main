@@ -35,10 +35,10 @@ const BannerSlider: React.FC<BannerSliderProps> = ({ banners }) => {
   return (
     <div className="relative w-full aspect-[12/5] rounded-lg overflow-hidden shadow-2xl mb-12">
       <div className="w-full h-full flex transition-transform ease-in-out duration-700" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {banners.map((banner) => (
+        {banners.map((banner, index) => (
           <div key={banner.id} className="relative w-full flex-shrink-0 h-full">
             <div className="absolute inset-0 overflow-hidden">
-              <img src={banner.imageUrl} alt="" className="w-full h-full object-cover" />
+              <img src={banner.imageUrl} alt={`Banner ${index + 1}`} className="w-full h-full object-cover" />
             </div>
           </div>
         ))}

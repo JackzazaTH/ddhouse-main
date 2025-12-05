@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { HomeDesign } from '@/lib/types';
 import { BedIcon, BathIcon, AreaIcon, ParkingIcon } from './Icon';
+import MortgageCalculator from './MortgageCalculator';
 
 interface HomeDetailViewProps {
   home: HomeDesign;
@@ -205,6 +206,11 @@ const HomeDetailView: React.FC<HomeDetailViewProps> = ({ home, onBack, onContact
                   ))}
               </ul>
           </div>
+      </div>
+
+      {/* Mortgage Calculator Section */}
+      <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+          <MortgageCalculator initialPrice={home.price_popular_discounted || home.price_popular_original || 2000000} />
       </div>
     </div>
   );

@@ -169,7 +169,46 @@ export const INITIAL_CUSTOM_PAGES: CustomPage[] = [
     id: 'page-002',
     slug: 'construction-process',
     title: 'ขั้นตอนการปลูกสร้าง',
-    content: `<div class="w-full font-sans">...</div>`, // Keeping truncated for brevity
+    content: `<div class="w-full font-sans">
+      <h2 class="text-3xl font-bold mb-6 text-primary">ขั้นตอนการปลูกสร้างบ้านกับ DDHOUSE</h2>
+      <div class="space-y-8">
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+          <div>
+             <h3 class="text-xl font-bold mb-2">ปรึกษาและวางแผน</h3>
+             <p class="text-gray-600">พูดคุยกับทีมสถาปนิกและวิศวกรเพื่อสรุปความต้องการ งบประมาณ และเลือกแบบบ้านที่เหมาะสมกับที่ดินของท่าน</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+          <div>
+             <h3 class="text-xl font-bold mb-2">ทำสัญญาและขออนุญาต</h3>
+             <p class="text-gray-600">ดำเนินการทำสัญญาก่อสร้าง และทีมงานจะดำเนินการยื่นขออนุญาตก่อสร้างกับหน่วยงานราชการให้ถูกต้องครบถ้วน</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+          <div>
+             <h3 class="text-xl font-bold mb-2">งานโครงสร้าง</h3>
+             <p class="text-gray-600">เริ่มงานตอกเสาเข็ม งานฐานราก คาน และเสา ด้วยมาตรฐานวิศวกรรมที่เข้มงวด พร้อมการตรวจสอบทุกขั้นตอน</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
+          <div>
+             <h3 class="text-xl font-bold mb-2">งานสถาปัตยกรรมและระบบ</h3>
+             <p class="text-gray-600">งานก่ออิฐ ฉาบปูน มุงหลังคา และติดตั้งระบบไฟฟ้า ประปา สุขาภิบาล โดยช่างผู้ชำนาญการ</p>
+          </div>
+        </div>
+         <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">5</div>
+          <div>
+             <h3 class="text-xl font-bold mb-2">งานตกแต่งและส่งมอบ</h3>
+             <p class="text-gray-600">ติดตั้งสุขภัณฑ์ งานพื้น งานสี และทำความสะอาด พร้อมตรวจสอบความเรียบร้อยก่อนส่งมอบบ้านให้ลูกค้า</p>
+          </div>
+        </div>
+      </div>
+    </div>`,
     seo: { title: 'ขั้นตอนการปลูกสร้าง | DDHOUSE', description: 'เรียนรู้ขั้นตอนการสร้างบ้านกับ DDHOUSE ตั้งแต่เริ่มต้นจนส่งมอบ' },
     menuLocation: 'service_submenu',
     order: 1
@@ -178,7 +217,49 @@ export const INITIAL_CUSTOM_PAGES: CustomPage[] = [
     id: 'page-003',
     slug: 'system-spec',
     title: 'ระบบก่อสร้าง & Material Spec',
-    content: `<div class="w-full font-sans">...</div>`, // Keeping truncated for brevity
+    content: `<div class="w-full font-sans">
+        <h2 class="text-3xl font-bold mb-6 text-primary">มาตรฐานงานก่อสร้างระดับพรีเมียม</h2>
+        <p class="text-lg text-gray-600 mb-8">เราคัดสรรวัสดุคุณภาพสูงและใช้เทคนิคการก่อสร้างที่ทันสมัย เพื่อความแข็งแรง ทนทาน และสวยงามของบ้านคุณ</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2">โครงสร้างและฐานราก</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• เสาเข็มคอนกรีตอัดแรงมาตรฐาน มอก.</li>
+                    <li>• คอนกรีตผสมเสร็จจาก CPAC หรือเทียบเท่า</li>
+                    <li>• เหล็กเส้นก่อสร้างมาตรฐานโรงงาน (SD40)</li>
+                    <li>• ระบบกันซึมคุณภาพสูง</li>
+                </ul>
+            </div>
+             <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2">งานหลังคาและฝ้า</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• กระเบื้องหลังคา SCG รุ่น Prestige หรือเทียบเท่า</li>
+                    <li>• โครงหลังคาสำเร็จรูปเคลือบกันสนิม</li>
+                    <li>• ฉนวนกันความร้อนใต้หลังคา</li>
+                    <li>• ฝ้าเพดานยิปซั่มฉาบเรียบกันชื้น</li>
+                </ul>
+            </div>
+             <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2">วัสดุปูพื้นและผนัง</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• กระเบื้องแกรนิตโต้เกรด A ขนาด 60x60 ซม.</li>
+                    <li>• พื้นไม้ลามิเนตหนา 12 มม. ในห้องนอน</li>
+                    <li>• สีทาภายนอกและภายในเกรดพรีเมียม (TOA/Jotun)</li>
+                    <li>• อิฐมวลเบา Q-CON เพื่อการกันความร้อนและเสียง</li>
+                </ul>
+            </div>
+             <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2">สุขภัณฑ์และระบบไฟฟ้า</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• สุขภัณฑ์ COTTO / American Standard</li>
+                    <li>• อุปกรณ์สวิทช์และปลั๊กไฟ Panasonic</li>
+                    <li>• สายร้อยท่อฝังผนังมาตรฐานความปลอดภัย</li>
+                    <li>• ระบบถังบำบัดน้ำเสีย DOS</li>
+                </ul>
+            </div>
+        </div>
+    </div>`,
     seo: { title: 'ระบบก่อสร้าง & Material Spec | DDHOUSE', description: 'ดูรายละเอียดระบบก่อสร้างและสเปควัสดุมาตรฐานของเรา' },
     menuLocation: 'service_submenu',
     order: 2
@@ -187,7 +268,32 @@ export const INITIAL_CUSTOM_PAGES: CustomPage[] = [
     id: 'page-005',
     slug: 'extra-services',
     title: 'สินค้าและบริการเสริมครบวงจร',
-    content: `<div class="w-full font-sans bg-white">...</div>`, // Keeping truncated
+    content: `<div class="w-full font-sans bg-white">
+        <h2 class="text-3xl font-bold mb-6 text-primary">บริการเสริมเพื่อบ้านที่สมบูรณ์แบบ</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="group">
+                <div class="overflow-hidden rounded-xl mb-4 h-48">
+                    <img src="https://picsum.photos/seed/interior/600/400" alt="Interior Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <h3 class="text-xl font-bold mb-2">ออกแบบตกแต่งภายใน</h3>
+                <p class="text-gray-600 text-sm">บริการออกแบบตกแต่งภายในครบวงจร โดยมัณฑนากรมืออาชีพ เพื่อให้บ้านสวยงามน่าอยู่และตอบโจทย์การใช้งาน</p>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden rounded-xl mb-4 h-48">
+                    <img src="https://picsum.photos/seed/landscape/600/400" alt="Landscape Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <h3 class="text-xl font-bold mb-2">จัดสวนและภูมิทัศน์</h3>
+                <p class="text-gray-600 text-sm">เนรมิตพื้นที่สีเขียวรอบบ้าน ให้ร่มรื่น สวยงาม และเป็นธรรมชาติ ด้วยบริการจัดสวนแบบมืออาชีพ</p>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden rounded-xl mb-4 h-48">
+                    <img src="https://picsum.photos/seed/pool/600/400" alt="Swimming Pool" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <h3 class="text-xl font-bold mb-2">สระว่ายน้ำระบบเกลือ</h3>
+                <p class="text-gray-600 text-sm">ออกแบบและก่อสร้างสระว่ายน้ำระบบเกลือ มาตรฐานสากล เพื่อสุขภาพและการพักผ่อนของทุกคนในครอบครัว</p>
+            </div>
+        </div>
+    </div>`,
     seo: { title: 'สินค้าและบริการเสริม | DDHOUSE', description: 'เลือกชมสินค้าและบริการเสริมเพื่อบ้านของคุณ เช่น ตกแต่งภายใน สระว่ายน้ำ จัดสวน และอื่นๆ' },
     menuLocation: 'service_submenu',
     order: 3
@@ -206,7 +312,71 @@ export const INITIAL_CUSTOM_PAGES: CustomPage[] = [
     id: 'page-appointment',
     slug: 'appointment',
     title: 'ติดต่อเรา',
-    content: `<div class="w-full font-sans">...</div>`, // Keeping truncated
+    content: `<div class="w-full font-sans">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-primary">ช่องทางการติดต่อ</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                         <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">ที่อยู่สำนักงาน</h3>
+                            <p class="text-gray-600">123/45 ถนนมิตรภาพ ตำบลในเมือง อำเภอเมือง จังหวัดอุบลราชธานี 34000</p>
+                        </div>
+                    </div>
+                     <div class="flex items-center gap-4">
+                         <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">เบอร์โทรศัพท์</h3>
+                            <p class="text-gray-600">097 978 7459</p>
+                        </div>
+                    </div>
+                     <div class="flex items-center gap-4">
+                         <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">อีเมล</h3>
+                            <p class="text-gray-600">contact@ddhouse.co.th</p>
+                        </div>
+                    </div>
+                     <div class="flex items-center gap-4">
+                         <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">เวลาทำการ</h3>
+                            <p class="text-gray-600">ทุกวัน 08:00 - 17:30 น.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                <h3 class="text-2xl font-bold mb-4">นัดหมายปรึกษาฟรี</h3>
+                <p class="text-gray-600 mb-6">กรอกข้อมูลเพื่อให้เจ้าหน้าที่ติดต่อกลับ เพื่อนัดหมายเวลาและให้คำปรึกษาเรื่องสร้างบ้าน</p>
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับข้อมูล ทางเราจะติดต่อกลับโดยเร็วที่สุด');">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">ชื่อ-นามสกุล</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="กรุณากรอกชื่อของคุณ" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์</label>
+                        <input type="tel" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="กรุณากรอกเบอร์โทรศัพท์" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">เรื่องที่ต้องการปรึกษา</label>
+                        <textarea class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none h-32" placeholder="รายละเอียดเบื้องต้น..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primaryDark transition-colors shadow-lg hover:shadow-xl">ส่งข้อมูลนัดหมาย</button>
+                </form>
+            </div>
+        </div>
+    </div>`,
     seo: { title: 'ติดต่อเรา | DDHOUSE', description: 'ติดต่อ DDHOUSE ศูนย์รับสร้างบ้าน บ้านดีดีวิศวกรรม' },
     menuLocation: 'primary',
     order: 90
